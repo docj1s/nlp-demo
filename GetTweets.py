@@ -88,3 +88,7 @@ plt.figure(figsize=(40,30))
 plt.imshow(wordcloud, interpolation="bilinear")
 plt.axis("off")
 plt.savefig('wordcloud.png')
+
+outfile = open("tweets.txt", "w")
+outfile.write(string)
+outfile.close()
