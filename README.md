@@ -1,4 +1,4 @@
-# nlp-demo
+# NLP-Demo: Sentiment Analysis of Twitter Data
 
 Simple demo that does the following: 
 
