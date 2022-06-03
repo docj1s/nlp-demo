@@ -17,15 +17,16 @@ import matplotlib.pyplot as plt
 
 tweets_list1 = []
 
-maxTweets = 1000
+maxTweets = 10000
 
 #get tweets (up to maxTweets)
-for i,tweet in enumerate(sntwitter.TwitterSearchScraper('from:LeBatardShow').get_items()):
+for i,tweet in enumerate(sntwitter.TwitterSearchScraper('from:LeBatardShow since:2022-04-01 until:2022-05-31').get_items()):
     if i>maxTweets:
         break
     tweets_list1.append([tweet.date, tweet.id, tweet.content, tweet.user.username])
 
 tweets_df1 = pd.DataFrame(tweets_list1, columns=['DateTime', 'Tweet Id', 'Text', 'Username'])
+tweets_df1.to_csv("PlayoffTweets.csv", sep="\t")
 
 print(tweets_df1.head())
 print(tweets_df1.tail())
