@@ -1,13 +1,16 @@
 # nlp-demo
-Simple demo that does the following:
-GetTweets: 
-  Pull tweets from a single Twitter account
-  Cleans the tweets dataset
-  Creates a wordcloud to show common words
+
+Simple demo that does the following: 
+
+- GetTweets: 
+  1. Pull tweets from a single Twitter account (@danlebatardshow)
+  2. Cleans the tweets dataset
+  3. Creates a wordcloud to show common words
+  
   **Output Files:** 
-    tweets.csv: dataframe of tweets, including username, time
-    tweets.txt text file of cleaned tweet data (only tweet data is included)
-    wordcloud.png
+  - tweets.csv: dataframe of tweets, including username, time
+  - tweets.txt text file of cleaned tweet data (only tweet data is included)
+  - wordcloud.png
     
  ClusterTweets:
   Creates a word2vec model from tweets
